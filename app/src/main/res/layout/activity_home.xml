@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codejocks.absolutedarhk.fragments.HomeActivity"
+    android:id="@+id/homeActivity"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/events"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="6dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_console"
+                android:background="@null"
+                android:id="@+id/eventsGif"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/book_table"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/events"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_mic"
+                android:background="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book\nA\nTable"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/music_library"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/events"
+            android:layout_toLeftOf="@id/book_table"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_headphone"
+                android:layout_marginBottom="38dp"
+                android:background="@null"
+                android:id="@+id/music_libraryGif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music Library"
+                android:gravity="center"
+                android:layout_marginTop="-38dp"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="110dp"
+            android:layout_height="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who We Are"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="6dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/speaker_home"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gallery"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/book_table"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="6dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_console2"
+                android:background="@null"
+                android:id="@+id/galleryGif"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hall_of_fame"
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/music_library"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hall of Fame"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginBottom="6dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_record"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/hall_of_fame"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_eq"
+                android:layout_marginBottom="18dp"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginTop="-16dp"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/hall_of_fame"
+            android:layout_toRightOf="@id/settings"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_knobs"
+                android:layout_marginBottom="18dp"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_marginTop="-16dp"
+                android:textColor="@color/textColorPrimary"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
